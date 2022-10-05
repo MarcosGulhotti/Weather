@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 const StyledHeader = styled.header`
+  background-color: var(--dark-gray);
+
   position: sticky;
   top: 0;
 
@@ -10,6 +12,8 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  margin-bottom: 30px;
 
   @media (max-width: 440px) {
     flex-direction: column;

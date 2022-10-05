@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import HeaderIcon from "../../assets/icons/HeaderIcon.svg";
-import { Button } from "./components/HeaderButton/Button";
+import { HeaderButton } from "../HeaderButton/HeaderButton";
 import { StyledHeader, StyledImage } from "./styles";
 
 export const Header = () => {
@@ -29,12 +29,12 @@ export const Header = () => {
         </div>
       </div>
       <div className="buttons-container">
-        <Button selected={selectedButton === "Home"} onClick={handleHomeButton}>
+        <HeaderButton selected={selectedButton === "Home"} onClick={handleHomeButton}>
           Home
-        </Button>
-        <Button selected={selectedButton === "About"} onClick={handleAboutButton}>
+        </HeaderButton>
+        <HeaderButton selected={selectedButton === "About"} onClick={handleAboutButton}>
           About
-        </Button>
+        </HeaderButton>
       </div>
     </StyledHeader>
   );

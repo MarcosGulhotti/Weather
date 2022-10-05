@@ -6,7 +6,7 @@ interface ButtonsInt {
   selected: boolean;
 }
 
-export const Button = ({ children, onClick, selected }: ButtonsInt) => {
+export const HeaderButton = ({ children, onClick, selected }: ButtonsInt) => {
   return (
     <StyledButton selected={selected} onClick={onClick}>
       {children}
